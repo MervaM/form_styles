@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="section">
+            <form class="form" autocomplete="off">
+                <h2 class="form__title">Create an Account</h2>
+                <div class="form__info">
+                    <div class="form__block">
+                        <label for="f_name" class="form__label">First Name</label>
+                        <input type="text" id="f_name" class="form__input">
+                    </div>
+                    <div class="form__block">
+                        <label for="l_name" class="form__label">Last Name</label>
+                        <input type="text" id="l_name" class="form__input">
+                    </div>
+                </div>
+                <div class="form__block">
+                    <label for="mail" class="form__label">E-mail</label>
+                    <input type="email" id="mail" class="form__input form__input_mail" required>
+                    <p class="subtitle">We'll never share your email with anyone else.</p>
+                </div>
+                <div class="form__gender">
+                    <label class="gender__label">Male
+                        <input type="radio" class="gender__input" name="gender">
+                        <span class="male_radio"></span>
+                    </label class="gender__label">
+                    <label>Female
+                        <input type="radio" class="gender__input" name="gender">
+                        <span class="female_radio"></span>
+                    </label>
+                </div>
+                <div class="form__info">
+                    <div class="form__block">
+                        <h3 class="block__title">Country</h3>
+                        <select name="country" class="block__select">
+                            <option value="" selected disabled class="select__input">Select</option>
+                            <option value="aut">Austria</option>
+                            <option value="bel">Belgium</option>
+                            <option value="ger">Germany</option>
+                            <option value="sp">Spain</option>
+                            <option value="fr">France</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="gr">Greece</option>
+                            <option value="sw">Sweden</option>
+                        </select>
+                    </div>
+                    <div class="form__block">
+                        <label for="city" class="form__label">City</label>
+                        <input type="text" class="form__input" id="city">
+                    </div>
+                </div>
+                <div class="form__button">
+                    <button type="button" class="button">Sign Up</button>
+                    <p class="form__description">
+                        By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" class="description__link">Terms of Use</a>
+                        and <a href="#" class="description__link">Privacy Policy</a>.
+                    </p>
+                </div>
+                <div class="form__log-in">
+                    <p>Have an account?</p>
+                    <a href="" class="log-in__link">Log In</a>
+                </div>
+            </form>
+        </section>
+        <section class="section">
+            <form class="form" autocomplete="off">
+                <h2 class="form__title">Profile</h2>
+                <div class="form__img">
+                    <img src="./assets/📷 Image.png" alt="User photo">
+                    <div class="file__loading">
+                        <label>
+                            <div>
+                                <input type="text" placeholder="" class="form__input placeholder">
+                                <p class="subtitle">Up to 1 MB (300x300 px)</p>
+                            </div>
+                            <!-- <div class="form__upload">
+                                <label>
+                                    <input type="file" class="placeholder">
+                                    <span></span>
+                                    <p class="subtitle">Up to 1 MB (300x300 px)</p>
+                                </label>
+                                
+                            </div> -->
+                        </label> 
+                        <img class="icon_trash" src="./assets/trash.png" alt="">
+
+                    </div>
+                    <!-- <span class="icon"><img src="./assets/trash.png" class="icon_trash" alt="Trash icon"></span> -->
+                    <!-- <label for="">
+                        <input type="submit" class="submit__icon"><span><img src="./assets/Trash.png" alt="Trash icon"></span>
+                    </label> -->
+                    
+                </div>
+                <div class="form__info">
+                    <div class="form__block">
+                        <label for="name" class="form__label">Name</label>
+                        <input type="text" id="name" class="form__input">
+                    </div>
+                    <div class="form__block">
+                        <label for="mail" class="form__label">E-mail</label>
+                        <input type="email" id="mail" class="form__input" required>
+                    </div>
+                </div>
+                <div class="form__info">
+                    <div class="form__block">
+                        <h3 class="block__title">Country</h3>
+                        <select name="country" class="block__select">
+                            <option value="" selected disabled class="select__input">Select</option>
+                            <option value="aut">Austria</option>
+                            <option value="bel">Belgium</option>
+                            <option value="ger">Germany</option>
+                            <option value="sp">Spain</option>
+                            <option value="fr">France</option>
+                            <option value="ua">Ukraine</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="gr">Greece</option>
+                            <option value="sw">Sweden</option>
+                        </select>
+                    </div>
+                    <div class="form__block">
+                        <label for="city" class="form__label">City</label>
+                        <input type="text" class="form__input" id="city">
+                    </div>
+                </div>
+                <div class="form__info">
+                    <div class="form__block">
+                        <label for="code" class="form__label">Zip Code</label>
+                        <input type="text" id="code" class="form__input">
+                    </div>
+                    <div class="form__block">
+                        <label for="phone" class="form__label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form__input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                </div>
+                <div class="form__btn">
+                    <button type="button" class="button update_btn">Update</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
