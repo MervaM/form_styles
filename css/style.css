@@ -193,11 +193,6 @@ margin-bottom: 7px;
     padding-left: 30px;
     position: relative; 
 }
-.icon_trash {
-    width: 30px;
-    height: 30px;
-    border-radius: 6px;
-}
 .file__loading label input {
     opacity: 0;
 }
@@ -228,4 +223,7 @@ margin-bottom: 7px;
     border: none;
     margin-left: -140px;
     margin-top: -7px;
+}
+.update_btn {
+    width: 150px;
 }
