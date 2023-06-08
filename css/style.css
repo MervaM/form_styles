@@ -16,7 +16,10 @@ html, body {
     color: var(--font-color);
 }
 .main {
+    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     background: #E5E5E5;
 }
