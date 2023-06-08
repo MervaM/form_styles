@@ -191,14 +191,14 @@ margin-bottom: 7px;
 .file__loading {
     display: inline-flex;
     padding-left: 30px;
-    /* position: relative;  */
+    position: relative; 
 }
 .icon_trash {
     width: 30px;
     height: 30px;
     border-radius: 6px;
 }
-/* .file__loading label input {
+.file__loading label input {
     opacity: 0;
 }
 .file__loading label span {
@@ -211,23 +211,21 @@ margin-bottom: 7px;
     background-image: url(../assets/Camera.png);
     background-repeat: no-repeat;
     background-position: 95%;
-} */
+}
 .form__upload {
     display: flex;
 }
-.placeholder {
-    width: 138px;
-    height: 30px;
-    padding: 10px 6px;
-    border: 1px solid #E4E4E4;
-    border-radius: 6px;
-    background-image: url(../assets/Camera.png);
-    background-repeat: no-repeat;
-    background-position: 95%;
-    margin-right: 10px;
+.file__upload {
+    margin-top: -30px;
     margin-bottom: 9px;
 }
-
-.update_btn {
-    width: 150px;
+.file__remove_btn {
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/trash.png);
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    border: none;
+    margin-left: -140px;
+    margin-top: -7px;
 }
